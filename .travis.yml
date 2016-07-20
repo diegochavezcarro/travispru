@@ -3,4 +3,4 @@ node_js:
 - 6
 deploy:
   provider: heroku
-  api_key:a539c475-a705-4073-b509-7fcaa6f0cd5a
+  api_key: a539c475-a705-4073-b509-7fcaa6f0cd5a
