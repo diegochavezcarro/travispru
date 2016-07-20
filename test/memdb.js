@@ -34,7 +34,7 @@ describe('memdb', function(){
 
     it('should return null when no doc matches', function(){
       var ret = memdb.first({ name: 'Manny' });
-      assert(ret == null);
+      assert(ret == null);/* jshint eqnull:true */
     });
   });
 });
