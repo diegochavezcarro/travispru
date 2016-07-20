@@ -11,6 +11,6 @@
   "scripts": {
     "pretest": "node node_modules/jshint/bin/jshint hello.js",
     "test": "mocha",
-    "posttest": "istanbul cover node_modules/mocha/bin/_mocha && istanbul check-coverage --statements 85"
+    "posttest": "istanbul cover node_modules/mocha/bin/_mocha && istanbul check-coverage --statements 86"
   }
 }
