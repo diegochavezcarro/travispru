@@ -28,13 +28,13 @@ describe('memdb', function(){
       var ret = memdb.first({ name: 'Tobi' });
       assert(ret == tobi);
 
-      var ret = memdb.first({ name: 'Loki' });
+      ret = memdb.first({ name: 'Loki' });
       assert(ret == loki);
-    })
+    });
 
     it('should return null when no doc matches', function(){
       var ret = memdb.first({ name: 'Manny' });
-      assert(ret == null);
-    })
-  })
-})
+      assert(ret === null);
+    });
+  });
+});
