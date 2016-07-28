@@ -1,8 +1,5 @@
 var express = require('express');
 var app = express();
-s;
-o=5;
-j
 var myLogger = function (req, res, next) {
     console.log('LOGGED');
     next();
