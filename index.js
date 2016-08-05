@@ -8,7 +8,7 @@ exports.save = function(doc, cb){
   db.push(doc);
   if (cb) {
     setTimeout(function() {
-      cb();
+      cb()
     }, 1000);
   }
 };
