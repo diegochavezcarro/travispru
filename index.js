@@ -5,7 +5,7 @@ exports.clear = function(){
 };
 
 exports.save = function(doc, cb){
-  db.push(doc);
+  db.push(doc)
   if (cb) {
     setTimeout(function() {
       cb();
