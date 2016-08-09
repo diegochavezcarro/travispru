@@ -1,14 +1,13 @@
 var http = require('http');
-var index = require('index');
-console.log("puerto en uso");
-console.log("puerto: " + process.env.PORT);
+var memdb = require('./memdb');
+var port     = process.env.PORT || 8080;
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    var memdb = index.clear();
+    memdb.clear();
     var tobi = { name: 'Tobi' };
     memdb.save(tobi);
     var ret = memdb.first({ name: 'Tobi' });
-    var welcome = 'Hello Travis!\n' + ret;
-    res.end(welcome); // this will FAIL travis CI lint
-}).listen(process.env.PORT);
-console.log('Server running at http://127.0.0.1:' + process.env.PORT);
+    var welcome = 'Hello Travis!\n' + ret.name;
+    res.end(welcome); 
+}).listen(port);
+console.log('Server running at http://localhost:' + port);
