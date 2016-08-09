@@ -1,4 +1,4 @@
-var memdb = require('..');
+var memdb = require('../memdb');
 var assert = require('assert');
 
 describe('memdb', function(){
