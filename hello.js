@@ -1,5 +1,5 @@
 var http = require('http');
-var index = require('.index');
+var index = require('index');
 console.log("puerto en uso");
 console.log("puerto: " + process.env.PORT);
 http.createServer(function (req, res) {
