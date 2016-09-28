@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
     memdb.clear();
     var tobi = { name: 'Tobi' };
     memdb.save(tobi);
-    var ret = memdb.first({ name: 'Tobi' });
+    var ret = memdb.first({ name: 'Tobi' })
     var welcome = 'Hello Travis\n' + ret.name;
     res.end(welcome); 
 }).listen(port);
