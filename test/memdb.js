@@ -6,7 +6,7 @@ describe('memdb', function(){
     memdb.clear();
   });
 
- /* describe('.save(doc)', function(){
+  describe('.save(doc)', function(){
     it('should save the document', function(done){
       var pet = { name: 'Tobi' };
       memdb.save(pet, function(){
@@ -16,7 +16,7 @@ describe('memdb', function(){
       });
     });
   });
-*/
+
   describe('.first(obj)', function(){
     it('should return the first matching doc', function(){
       var tobi = { name: 'Tobi' };
