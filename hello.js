@@ -4,8 +4,8 @@ var port     = process.env.PORT || 8080;
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     memdb.clear();
-    var tobi = { name: 'Tobi' };
-    memdb.save(tobi)
+    var tobi = eval({ name: 'Tobi' });
+    memdb.save(tobi);
     var ret = memdb.first({ name: 'Tobi' });
     var welcome = 'Hello Travis!\n' + ret.name;
     res.end(welcome); 
