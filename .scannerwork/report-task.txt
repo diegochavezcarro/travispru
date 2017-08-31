@@ -1,0 +1,7 @@
+organization=diegochavezcarro-github
+projectKey=travispru
+serverUrl=https://sonarcloud.io
+serverVersion=6.5.0.27571
+dashboardUrl=https://sonarcloud.io/dashboard/index/travispru
+ceTaskId=AV44IyW6-ycAxoR9jTjz
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AV44IyW6-ycAxoR9jTjz
