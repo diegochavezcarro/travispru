@@ -7,7 +7,7 @@ http.createServer(function (req, res) {
     var tobi = { name: 'Travis' };
     memdb.save(tobi);
     var ret = memdb.first({ name: 'Travis' });
-    var welcome = 'Hello ' + ret.name + '!';
+    var welcome = 'Hello ' + ret.name + '!!';
     res.end(welcome); 
 }).listen(port);
 console.log('Server running at http://localhost:' + port);
